@@ -41,6 +41,9 @@ void MainGame::foundTreasure(Sector* tempNew, TreasureChest* tempChest, Inventor
 	cout << "Sector has no more treasure\n";
 }
 
+/*
+* Get the desired size of the map from the user
+*/
 void MainGame::setMapSize()
 {
 	int enterX, enterY;
