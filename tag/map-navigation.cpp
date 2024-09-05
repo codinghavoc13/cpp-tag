@@ -4,6 +4,7 @@
 #include "player.h"
 #include <iostream>
 
+/*Takes in the direction the player wants to go and the size of the game map*/
 Sector* GameMap::navigation(string direction, int mX, int mY)
 {
 	int option;

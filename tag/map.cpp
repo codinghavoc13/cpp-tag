@@ -4,7 +4,7 @@
 #include "player.h"
 #include <iostream>
 
-int randNum();
+//int randNum();
 
 GameMap::GameMap() {};
 

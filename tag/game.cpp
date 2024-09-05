@@ -61,6 +61,8 @@ int MainGame::combat(Player* tempPlayer, Enemy* tempEnemy, Inventory* tempInv)
 	int combatNum = randCombatNum();
 	char retreat = 'n', drink;
 	bool potionCheck;
+	//Example: weapon damage = 10; player level 5
+	//10 * (5.0 + (5.0/10) -> 10 * (5.0 + 0.5) -> 10 * 5.5 -> 55
 	double playerDmg = (tempPlayer->getWeaponDmg() * ((double)tempPlayer->getLevel() + ((double)tempPlayer->getLevel() / 10)));
 	while ((tempPlayer->getHealth() > 0) && (tempEnemy->getHealth() > 0))
 	{
@@ -146,7 +148,7 @@ int MainGame::combat(Player* tempPlayer, Enemy* tempEnemy, Inventory* tempInv)
 	}
 	if (tempEnemy->getHealth() <= 0)
 	{
-		cout << "The enemy is dead! Go get a beer!\n";
+		cout << "The enemy is dead! Go get an ale!\n";
 		tempPlayer->incHealth(100);
 		tempPlayer->incPlayerExp(tempEnemy->getexpValue());
 		//system("pause");

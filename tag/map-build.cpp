@@ -5,8 +5,8 @@
 #include "treasurechest.h"
 #include <iostream>
 
-int randNum();
-int randItem();
+//int randNum();
+//int randItem();
 
 void GameMap::addSector(int x, int y)
 {
